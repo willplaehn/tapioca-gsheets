@@ -1,6 +1,10 @@
 # Tapioca gsheets
 
 ## Installation
+Not yet available for installation on PyPy!
+Currently requires the xml_and_oauth2_helper branch of tapioca-wrapper.
+
+Future:
 ```
 pip install tapioca-gsheets
 ```
@@ -10,8 +14,7 @@ pip install tapioca-gsheets
 from tapioca_gsheets import Gsheets
 
 
-api = Gsheets(
-	client_id='{your-client-id}', access_token='{any-valid-access-token}')
+api = Gsheets(access_token='{any-valid-access-token}')
 
 ```
 
