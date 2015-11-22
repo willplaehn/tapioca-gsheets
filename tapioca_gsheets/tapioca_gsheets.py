@@ -6,11 +6,11 @@ from requests_oauthlib import OAuth2
 
 from .resource_mapping import RESOURCE_MAPPING
 
-from tapioca.adapters import FlatXmlAdapterMixin
+from tapioca.adapters import FlatXMLAdapterMixin
 from tapioca.oauth2_token_requester import Oauth2TokenRequester  # todo: cookiecutter
 
 
-class GsheetsClientAdapter(FlatXmlAdapterMixin, TapiocaAdapter):
+class GsheetsClientAdapter(FlatXMLAdapterMixin, TapiocaAdapter):
     api_root = 'https://spreadsheets.google.com/feeds'
     resource_mapping = RESOURCE_MAPPING
 
